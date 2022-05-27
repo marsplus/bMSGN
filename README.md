@@ -6,7 +6,7 @@ The codebase now supports the replication of Figure 1 and 2; we will add the cod
 - Unzip the files ```data/BTER.zip``` and ```result/BTER.zip```. They are the ```BTER``` network structures used in the experiments.
 - Creat three folders: ```result/LikRatio```,  ```result/synthetic``` and ```result/figures```, which will be used to store experimental results.
 - Install the needed packages with ```conda create -n bMSGN python=3.7 --file requirements.txt -c mosek -c conda-forge -c pytorch```.
-- Install the [Mosek](https://www.mosek.com/) solver, which is used to solve the maximum likelihood estimation (MLE) problem in the paper. They provide free license for students. The solver is callaed through the API of [CVXPY](https://www.cvxpy.org/).
+- We used the [Mosek](https://www.mosek.com/) solver to solve the maximum likelihood estimation (MLE) problem in the paper. Free license is available for students on their website. The solver is callaed through the API of [CVXPY](https://www.cvxpy.org/).
 
 
 #### 2. Generate Figure 1
