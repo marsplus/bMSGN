@@ -1,0 +1,8 @@
+
+pytorch==1.9.0
+numpy==1.20.3
+scipy==1.7.0
+cvxpy==1.1.13
+networkx==2.5
+mosek==9.2.49
+dill==0.3.4
