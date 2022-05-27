@@ -11,7 +11,7 @@ The codebase now supports the replication of Figure 1 and 2; we will add the cod
 
 #### 2. Generate Figure 1
 - Under the ```src/``` folder, run the following to generate the synthetic data and then estimate the game parameters 
-  (**the estimation is memory intensive**):
+  **WARNING: the estimation is memory intensive.**:
   ```
     ./exp.sh simulation
     ./exp.sh estimation
@@ -23,7 +23,7 @@ The codebase now supports the replication of Figure 1 and 2; we will add the cod
   
 #### 3. Generate Figure 2
 - Under the ```src/``` folder, run the following to generate the synthetic data and then estimate the game parameters 
-  (**the estimation is memory intensive**):
+  **WARNING: the estimation is memory intensive.**:
   ```
     ./liktest.sh simulation
     ./liktest.sh liktest
