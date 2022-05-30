@@ -63,12 +63,14 @@ def gen_figure2():
             
         data = pd.read_csv('../result/liktest_withGroup.txt', sep=' ', header=None)
         data.columns = ['time step', 'graph', 'p-value']
+        data = data[data['graph'] == graph_type]
         yerr = data.groupby('time step')['p-value'].sem() * 1.96
         data.groupby('time step')['p-value'].mean().plot(yerr=yerr, linestyle='solid', \
                                                                 linewidth=4, label='with groups', capsize=10, ax=axes[i])
 
         data_no = pd.read_csv('../result/liktest_noGroup.txt', sep=' ', header=None)
         data_no.columns = ['time step', 'graph', 'p-value']
+        data_no = data_no[data_no['graph'] == graph_type]
         yerr = data_no.groupby('time step')['p-value'].sem() * 1.96
         data_no.groupby('time step')['p-value'].mean().plot(yerr=yerr, linestyle='-.', \
                                                                    linewidth=4, label='without group', capsize=10, ax=axes[i])
